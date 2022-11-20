@@ -27,8 +27,13 @@ container{
     width: 100%;
     justify-content: center;
     align-items: center;
+    
 }
-
+.row:after {
+      content: "";
+      display: table;
+      clear: both;
+}
 .card{
     border-radius: 3%;
     background-color: #fff;
@@ -39,6 +44,8 @@ container{
     align-self: normal;
     display: flex;
     flex-direction: column;
+    float: left;
+    width: 25%;
 }
 img{
     border-top-right-radius: 4%;
@@ -72,11 +79,15 @@ img{
     margin-top: 20px;
     
 }
+@media screen and (max-width: 900px) {
+  .card  {
+    width: 50%;
+  }
+}
 @media screen and (max-width: 600px) {
-  .column {
+  .card {
     width: 100%;
-    display: block;
-    margin-bottom: 20px;
+    
   }
 }
 
