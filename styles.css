@@ -12,7 +12,8 @@ body{
     background-attachment: fixed;
 }
 container{
-    margin: 10px;
+    max-width: 1200px;
+  margin: 0 auto;
     
 
 }
@@ -50,9 +51,12 @@ container{
 img{
     border-top-right-radius: 4%;
     border-top-left-radius: 4%;
+    height: auto;
+    max-width: 100%;
+    vertical-align: middle;
 }
 .img-size{
-    width: 100%;
+    
     object-fit: cover;
 }
 .img-size-signal{
@@ -79,15 +83,20 @@ img{
     margin-top: 20px;
     
 }
-@media screen and (max-width: 900px) {
-  .card  {
+.cards_item {
+  display: flex;
+  padding: 1rem;
+}
+
+@media (min-width: 40rem) {
+  .cards_item {
     width: 50%;
   }
 }
-@media screen and (max-width: 600px) {
-  .card {
-    width: 100%;
-    
+
+@media (min-width: 56rem) {
+  .cards_item {
+    width: 33.3333%;
   }
 }
 
