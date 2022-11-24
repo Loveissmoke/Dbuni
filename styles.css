@@ -8,7 +8,7 @@ body{
     font-family: 'Playfair Display', serif;
     display: flex;
     align-items: center;
-    background: linear-gradient(45deg,#fff,#e3e3e3);
+    background: linear-gradient(45deg,#fff,#b0e2ff);
     background-attachment: fixed;
 }
 container{
